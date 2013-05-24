@@ -1,0 +1,150 @@
+2013-05-23 09:05:32,940 [183] INFO  Umbraco.Core.PluginManager - [Thread 89] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 5ms)
+2013-05-23 09:05:43,414 [183] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 41] Content 'Who we are' with Id '1127' has been published.
+2013-05-23 09:05:43,534 [183] ERROR umbraco.presentation.nodeFactory.UmbracoSiteMapProvider - [Thread 41] Error adding node 1122 to SiteMapProvider in loadNodes()
+System.InvalidOperationException: Multiple nodes with the same URL '/' were found. XmlSiteMapProvider requires that sitemap nodes have unique URLs.
+   at System.Web.StaticSiteMapProvider.AddNode(SiteMapNode node, SiteMapNode parentNode)
+   at umbraco.presentation.nodeFactory.UmbracoSiteMapProvider.loadNodes(String parentId, SiteMapNode parentNode)
+2013-05-23 09:05:43,669 [183] INFO  umbraco.content - [Thread 42] Loading content from database...
+2013-05-23 09:36:08,468 [183] INFO  umbraco.BusinessLogic.Log - [Thread 7] Log scrubbed.  Removed all items older than 2013-03-24 09:36:08
+2013-05-23 09:36:08,471 [183] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 7] Application shutdown. Reason: HostingEnvironment
+2013-05-23 15:09:08,703 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application starting
+2013-05-23 15:09:08,730 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-05-23 15:09:08,737 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 6ms)
+2013-05-23 15:09:08,828 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 13 (took 81ms)
+2013-05-23 15:09:08,849 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Models.IMacroPropertyType, found 0 (took 3ms)
+2013-05-23 15:09:08,853 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 3ms)
+2013-05-23 15:09:08,856 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 2ms)
+2013-05-23 15:09:08,866 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2013-05-23 15:09:08,869 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 3ms)
+2013-05-23 15:09:08,957 [6] INFO  Umbraco.Core.CoreBootManager - [Thread 1] Umbraco application startup complete (took 247ms)
+2013-05-23 15:09:09,111 [6] INFO  umbraco.BusinessLogic.Log - [Thread 7] Redirected log call (please use Umbraco.Core.Logging.LogHelper instead of umbraco.BusinessLogic.Log) | Type: Custom | User: 0 | NodeId: -1 | Comment: [UmbracoExamine] Adding examine event handlers for index providers: 3
+2013-05-23 15:09:09,115 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 7ms)
+2013-05-23 15:09:09,165 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 4ms)
+2013-05-23 15:09:09,548 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2013-05-23 15:09:09,663 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.ITree, found 36 (took 3ms)
+2013-05-23 15:09:24,581 [6] INFO  umbraco.content - [Thread 8] Loading content from disk cache...
+2013-05-23 15:09:24,829 [6] INFO  Umbraco.Core.PluginManager - [Thread 8] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 3ms)
+2013-05-23 15:23:14,047 [6] INFO  Umbraco.Core.PluginManager - [Thread 41] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 9ms)
+2013-05-23 15:23:20,825 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Clare Maddox' with Id '1186' has been unpublished.
+2013-05-23 15:23:21,179 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'James Aird' with Id '1185' has been unpublished.
+2013-05-23 15:23:21,237 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Tim Mustill' with Id '1184' has been unpublished.
+2013-05-23 15:23:21,290 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Richard Allcorn' with Id '1183' has been unpublished.
+2013-05-23 15:23:21,366 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Who we are' with Id '1127' has been unpublished.
+2013-05-23 15:23:21,470 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Life-cycle management' with Id '1182' has been unpublished.
+2013-05-23 15:23:21,533 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Communication strategy' with Id '1181' has been unpublished.
+2013-05-23 15:23:21,595 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Product commercialisation' with Id '1180' has been unpublished.
+2013-05-23 15:23:21,659 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'Portofolio strategy' with Id '1161' has been unpublished.
+2013-05-23 15:23:21,785 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 37] Content 'What we do' with Id '1126' has been unpublished.
+2013-05-23 15:23:21,844 [6] INFO  umbraco.content - [Thread 30] Loading content from database...
+2013-05-23 15:24:29,762 [6] INFO  umbraco.content - [Thread 45] Loading content from database...
+2013-05-23 15:41:16,485 [6] INFO  umbraco.content - [Thread 15] Loading content from database...
+2013-05-23 15:41:21,401 [6] INFO  umbraco.content - [Thread 32] Loading content from database...
+2013-05-23 15:41:24,265 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'Information' with Id '1201' has been unpublished.
+2013-05-23 15:41:24,329 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'Expertise' with Id '1199' has been unpublished.
+2013-05-23 15:41:24,396 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'Smart decision' with Id '1198' has been unpublished.
+2013-05-23 15:41:24,458 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'Options' with Id '1197' has been unpublished.
+2013-05-23 15:41:24,521 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'The objective' with Id '1195' has been unpublished.
+2013-05-23 15:41:24,587 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'Analysis' with Id '1196' has been unpublished.
+2013-05-23 15:41:24,649 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'Context' with Id '1200' has been unpublished.
+2013-05-23 15:41:24,690 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 53] Content 'About' with Id '1192' has been unpublished.
+2013-05-23 15:41:24,738 [6] INFO  umbraco.content - [Thread 15] Loading content from database...
+2013-05-23 15:41:28,268 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Contact' with Id '1128' has been unpublished.
+2013-05-23 15:41:28,385 [6] INFO  umbraco.content - [Thread 25] Loading content from database...
+2013-05-23 15:41:34,661 [6] INFO  umbraco.content - [Thread 15] Loading content from database...
+2013-05-23 15:41:38,646 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 29] Content 'experienced' with Id '1152' has been unpublished.
+2013-05-23 15:41:38,708 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 29] Content 'strategic' with Id '1153' has been unpublished.
+2013-05-23 15:41:38,763 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 29] Content 'driving' with Id '1154' has been unpublished.
+2013-05-23 15:41:38,815 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 29] Content 'delivering' with Id '1155' has been unpublished.
+2013-05-23 15:41:38,858 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 29] Content 'Interactive text' with Id '1123' has been unpublished.
+2013-05-23 15:41:38,895 [6] INFO  umbraco.content - [Thread 8] Loading content from database...
+2013-05-23 15:41:42,377 [6] INFO  umbraco.content - [Thread 18] Loading content from database...
+2013-05-23 15:50:35,189 [6] INFO  umbraco.BasePages.BasePage - [Thread 30] User admin (Id: 0) logged in
+2013-05-23 16:47:27,777 [6] INFO  umbraco.content - [Thread 88] Loading content from database...
+2013-05-23 16:47:32,983 [6] INFO  umbraco.content - [Thread 100] Loading content from database...
+2013-05-23 17:00:19,582 [6] INFO  umbraco.content - [Thread 82] Loading content from database...
+2013-05-23 17:01:59,514 [6] INFO  umbraco.content - [Thread 94] Loading content from database...
+2013-05-23 17:02:03,713 [6] INFO  umbraco.content - [Thread 16] Loading content from database...
+2013-05-23 17:02:06,573 [6] INFO  umbraco.content - [Thread 39] Loading content from database...
+2013-05-23 17:02:09,719 [6] INFO  umbraco.content - [Thread 16] Loading content from database...
+2013-05-23 17:02:12,865 [6] INFO  umbraco.content - [Thread 37] Loading content from database...
+2013-05-23 17:16:00,291 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 100] Content 'Home' with Id '1122' has been published.
+2013-05-23 17:16:00,471 [6] ERROR umbraco.presentation.nodeFactory.UmbracoSiteMapProvider - [Thread 100] Error adding node 1122 to SiteMapProvider in loadNodes()
+System.InvalidOperationException: Multiple nodes with the same URL '/' were found. XmlSiteMapProvider requires that sitemap nodes have unique URLs.
+   at System.Web.StaticSiteMapProvider.AddNode(SiteMapNode node, SiteMapNode parentNode)
+   at umbraco.presentation.nodeFactory.UmbracoSiteMapProvider.loadNodes(String parentId, SiteMapNode parentNode)
+2013-05-23 17:16:00,529 [6] INFO  umbraco.BusinessLogic.Log - [Thread 77] Redirected log call (please use Umbraco.Core.Logging.LogHelper instead of umbraco.BusinessLogic.Log) | Type: Custom | User: 0 | NodeId: -1 | Comment: [UmbracoExamine] (ExternalIndexer)Index is being optimized
+2013-05-23 17:16:13,257 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 78] New document 1333
+2013-05-23 17:16:25,282 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 88] Content 'Personal Projects' with Id '1333' has been published.
+2013-05-23 17:17:24,145 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 97] Content 'Home' with Id '1122' has been published.
+2013-05-23 17:17:24,245 [6] INFO  umbraco.BusinessLogic.Log - [Thread 78] Redirected log call (please use Umbraco.Core.Logging.LogHelper instead of umbraco.BusinessLogic.Log) | Type: Custom | User: 0 | NodeId: -1 | Comment: [UmbracoExamine] (InternalIndexer)Index is being optimized
+2013-05-23 17:17:52,779 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 75] Content 'Personal Projects' with Id '1333' has been published.
+2013-05-23 17:19:14,341 [6] INFO  umbraco.content - [Thread 27] Loading content from database...
+2013-05-23 17:19:22,390 [6] INFO  umbraco.content - [Thread 77] Loading content from database...
+2013-05-23 17:19:31,736 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 75] New document 1334
+2013-05-23 17:19:34,376 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 77] Content 'Skills' with Id '1334' has been published.
+2013-05-23 17:19:42,240 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 61] New document 1335
+2013-05-23 17:19:44,639 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 80] Content 'Work Experience' with Id '1335' has been published.
+2013-05-23 17:31:05,600 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 91] New document 1338
+2013-05-23 17:31:07,949 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Education' with Id '1338' has been published.
+2013-05-23 17:31:07,977 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-23 17:31:07,977 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-23 17:31:07,977 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-23 17:31:46,288 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 49] New document 1339
+2013-05-23 17:31:54,218 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 81] New document 1340
+2013-05-23 17:32:56,819 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Orsay' with Id '1340' has been published.
+2013-05-23 17:32:56,863 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-23 17:32:56,863 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-23 17:32:56,863 [6] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 9] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-23 17:33:34,061 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 39] Content 'High School diploma' with Id '1339' has been published.
+2013-05-23 17:33:34,117 [6] ERROR umbraco.presentation.nodeFactory.UmbracoSiteMapProvider - [Thread 39] Error adding node with url 'High School diploma' and Id 1339 to SiteMapProvider
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at umbraco.presentation.nodeFactory.UmbracoSiteMapProvider.UpdateNode(Node node)
+2013-05-23 17:33:51,784 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'Orsay' with Id '1340' has been published.
+2013-05-23 17:33:51,834 [6] ERROR umbraco.presentation.nodeFactory.UmbracoSiteMapProvider - [Thread 7] Error adding node with url 'Orsay' and Id 1340 to SiteMapProvider
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at umbraco.presentation.nodeFactory.UmbracoSiteMapProvider.UpdateNode(Node node)
+2013-05-23 17:33:51,910 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'High School diploma' with Id '1339' has been published.
+2013-05-23 17:34:22,337 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 42] New document 1341
+2013-05-23 17:35:55,052 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 33] Content '.NET Framework' with Id '1341' has been published.
+2013-05-23 17:37:12,634 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 43] Content '.NET Framework' with Id '1341' has been published.
+2013-05-23 17:37:31,550 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 42] New document 1342
+2013-05-23 17:40:14,144 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 87] Content 'DBMS' with Id '1342' has been published.
+2013-05-23 17:45:17,872 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 33] New document 1343
+2013-05-23 17:47:22,975 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 42] Content 'Front-end' with Id '1343' has been published.
+2013-05-23 17:47:23,086 [6] INFO  umbraco.BusinessLogic.Log - [Thread 82] Redirected log call (please use Umbraco.Core.Logging.LogHelper instead of umbraco.BusinessLogic.Log) | Type: Custom | User: 0 | NodeId: -1 | Comment: [UmbracoExamine] (InternalIndexer)Index is being optimized
+2013-05-23 17:47:31,141 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 34] New document 1344
+2013-05-23 17:48:42,600 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'Languages' with Id '1344' has been published.
+2013-05-23 17:49:22,095 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 12] New document 1345
+2013-05-23 17:51:11,571 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 82] Content 'Development Software' with Id '1345' has been published.
+2013-05-23 17:51:40,340 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content '.NET Framework' with Id '1341' has been published.
+2013-05-23 17:51:40,495 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Front-end' with Id '1343' has been published.
+2013-05-23 17:51:40,640 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'DBMS' with Id '1342' has been published.
+2013-05-23 17:51:40,810 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Development Software' with Id '1345' has been published.
+2013-05-23 17:51:40,960 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Languages' with Id '1344' has been published.
+2013-05-23 17:52:07,288 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 20] New document 1346
+2013-05-23 17:53:34,878 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Executive' with Id '1346' has been published.
+2013-05-23 17:53:48,984 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Executive' with Id '1346' has been published.
+2013-05-23 17:54:22,768 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Development Software' with Id '1345' has been published.
+2013-05-23 17:54:32,471 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 83] Content 'Executive' with Id '1346' has been published.
+2013-05-23 17:54:39,108 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content '.NET Framework' with Id '1341' has been published.
+2013-05-23 17:54:39,262 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Front-end' with Id '1343' has been published.
+2013-05-23 17:54:39,402 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'DBMS' with Id '1342' has been published.
+2013-05-23 17:54:39,530 [6] INFO  umbraco.BusinessLogic.Log - [Thread 20] Redirected log call (please use Umbraco.Core.Logging.LogHelper instead of umbraco.BusinessLogic.Log) | Type: Custom | User: 0 | NodeId: -1 | Comment: [UmbracoExamine] (InternalIndexer)Index is being optimized
+2013-05-23 17:54:39,542 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Development Software' with Id '1345' has been published.
+2013-05-23 17:54:39,670 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Executive' with Id '1346' has been published.
+2013-05-23 17:54:39,797 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 12] Content 'Languages' with Id '1344' has been published.
+2013-05-23 17:55:22,285 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 7] New document 1347
+2013-05-23 17:58:05,388 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 34] Content 'dotDigitalGroup' with Id '1347' has been published.
+2013-05-23 17:59:52,210 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 63] New document 1348
+2013-05-23 18:01:56,366 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 56] Content 'Skinkers' with Id '1348' has been published.
+2013-05-23 18:02:55,391 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 63] Content 'dotDigitalGroup' with Id '1347' has been published.
+2013-05-23 18:03:41,944 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 52] New document 1349
+2013-05-23 18:04:38,040 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 82] Content 'Perigee' with Id '1349' has been published.
+2013-05-23 18:04:48,103 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 89] New document 1350
+2013-05-23 18:06:00,880 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 14] Content 'Sharing Knowledge' with Id '1350' has been published.
+2013-05-23 18:06:10,100 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 24] New document 1351
+2013-05-23 18:06:46,634 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 24] Content 'Celtrino' with Id '1351' has been published.
+2013-05-23 18:27:10,589 [6] INFO  umbraco.BusinessLogic.Log - [Thread 98] Log scrubbed.  Removed all items older than 2013-03-24 18:27:10
+2013-05-23 18:27:10,593 [6] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 98] Application shutdown. Reason: HostingEnvironment

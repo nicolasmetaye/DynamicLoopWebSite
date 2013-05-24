@@ -1,0 +1,13 @@
+﻿@using AutoMapper
+@using DynamicLoop.Components.Models.Master
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var metaTagsModel = Mapper.Map<IPublishedContent, MetaTagsModel>(Model.Content);
+}
+
+@Html.Partial("Education", metaTagsModel)
+
+@Html.Partial("Skills", metaTagsModel)
+
+@Html.Partial("WorkExperience", metaTagsModel)   		   

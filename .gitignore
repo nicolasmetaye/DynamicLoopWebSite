@@ -1,5 +1,4 @@
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-[Bb]in/
 [Oo]bj/
 
 # mstest test results
@@ -78,9 +77,6 @@ publish
 # Publish Web Output
 *.Publish.xml
 
-# NuGet Packages Directory
-packages
-
 # Windows Azure Build Output
 csx
 *.build.csdef
@@ -89,7 +85,6 @@ csx
 AppPackages/
 
 # Others
-[Bb]in
 [Oo]bj
 sql
 TestResults

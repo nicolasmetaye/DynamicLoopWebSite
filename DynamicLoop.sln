@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoop.Components", "DynamicLoop.Components\DynamicLoop.Components.csproj", "{EFFF2F18-CBB9-489D-B568-A159EF450121}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DynamicLoop", "DynamicLoop\", "{F181AAB2-DDD4-4830-AE63-83CC211A3D8C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{efff2f18-cbb9-489d-b568-a159ef450121}|DynamicLoop.Components.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/DynamicLoop"
+		Debug.AspNetCompiler.PhysicalPath = "DynamicLoop\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DynamicLoop\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DynamicLoop"
+		Release.AspNetCompiler.PhysicalPath = "DynamicLoop\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DynamicLoop\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51699"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFF2F18-CBB9-489D-B568-A159EF450121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFF2F18-CBB9-489D-B568-A159EF450121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFF2F18-CBB9-489D-B568-A159EF450121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFF2F18-CBB9-489D-B568-A159EF450121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F181AAB2-DDD4-4830-AE63-83CC211A3D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F181AAB2-DDD4-4830-AE63-83CC211A3D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F181AAB2-DDD4-4830-AE63-83CC211A3D8C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F181AAB2-DDD4-4830-AE63-83CC211A3D8C}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

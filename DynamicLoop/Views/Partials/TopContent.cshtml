@@ -1,0 +1,46 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Master.TopContentModel>
+@{
+    Layout = null;
+}
+
+<div class="title-container">
+    <h1>@Model.PersonalInformation.FullName</h1>
+    <h3>@Model.PersonalInformation.JobTitle.ToUpper()</h3>
+</div>
+<ul class="controls">
+    <li class="save" title="Download CV"><a id="saveLink" href="@Model.PersonalInformation.ResumePDFUrl">&nbsp;</a></li>
+    <li class="print" title="Print CV"><a id="printLink" href="#">&nbsp;</a></li>
+    <li class="mail-top" title="Email"><a id="mailLink" href="mailto:@Model.PersonalInformation.Email">&nbsp;</a></li>
+</ul>  
+<p class="top-description">
+    @Model.PersonalInformation.Introduction
+</p>
+                               
+<h4 class="address">@Model.PersonalInformation.Address</h4>
+<h4 class="mail"><a href="mailto:@Model.PersonalInformation.Email">@Model.PersonalInformation.Email</a></h4>
+	   
+<div class="link-container">
+    @{
+        var first = true;
+        foreach (var item in Model.MenuItems)
+        {
+            if (!first)
+            {
+                @Html.Raw(" \\ ")
+            }
+            else
+            {
+                first = false;
+            }
+            if (item.IsSelected)
+            {
+                <span class="selected">@item.Title</span>
+            }
+            else
+            {
+                <a href="@item.Url">@item.Title</a>
+            }
+        }
+    }
+
+</div>

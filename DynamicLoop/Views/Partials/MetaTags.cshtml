@@ -1,0 +1,13 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Master.MetaTagsModel>
+@{
+    Layout = null;
+}
+<title>@Model.Title</title>
+@if (!String.IsNullOrEmpty(Model.Description)) 
+{ 
+	<meta name="description" content="@Model.Description"> 
+}
+@if (!String.IsNullOrEmpty(Model.Keywords))
+{ 
+	<meta name="keywords" content="@Model.Keywords"> 
+}
