@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using DynamicLoop.Components.Extensions;
+using DynamicLoop.Components.Helpers;
 using DynamicLoop.Components.Models.Master;
 using AutoMapper;
 using Umbraco.Core.Models;
@@ -24,21 +25,14 @@ namespace DynamicLoop.Components.Mapping.Profiles
                 .ForMember(model => model.FullName, expression => expression.ResolveUsing(node => node.GetPropertyValue<string>("fullName")))
                 .ForMember(model => model.Introduction, expression => expression.ResolveUsing(node => node.GetPropertyValue<string>("introduction")))
                 .ForMember(model => model.JobTitle, expression => expression.ResolveUsing(node => node.GetPropertyValue<string>("jobTitle")))
-                .ForMember(model => model.ResumePDFUrl, expression => expression.ResolveUsing(node =>
-                    {
-                        var helper = new UmbracoHelper(UmbracoContext.Current);
-                        var linkMedia = helper.TypedMedia(node.GetPropertyValue<int>("resumePDF"));
-                        if (linkMedia != null)
-                            return linkMedia.GetPropertyValue<string>("umbracoFile");
-                        return string.Empty;
-                    }));
+                .ForMember(model => model.ResumePDFUrl, expression => expression.ResolveUsing(node => new MediaPropertyManager(new UmbracoHelper(UmbracoContext.Current)).GetMediaUrl(node, "resumePDF")));
 
             Mapper.CreateMap<IPublishedContent, TopContentModel>()
                 .ForMember(model => model.PersonalInformation, expression => expression.ResolveUsing(node => node.AncestorOrSelf(1)))
                 .ForMember(model => model.MenuItems, expression => expression.ResolveUsing(node =>
                     {
                         var rootNode = node.AncestorOrSelf(1);
-                        var personalProjectsNode = rootNode.Children.FirstOrDefault(content => content.DocumentTypeAlias.Equals("PersonalProjects", StringComparison.OrdinalIgnoreCase));
+                        var personalProjectsNode = rootNode.GetChildNode("PersonalProjects");
                         return new List<MenuItemModel>
                             {
                                 new MenuItemModel

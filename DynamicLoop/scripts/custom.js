@@ -1,7 +1,9 @@
 $(document).ready(function(){	
 	$('#middleContent ul.list>li:nth-child(even)').not('.arrow-up').css({ 'background': '#e6e6e6'});
-	$('#middleContent ul.list>li:nth-child(odd)').not('.arrow-up').css({ 'background': '#f6f6f6'});
-	$('#middleContent ul.list:last-child').css({'margin-bottom':'0'});
+	$('#middleContent ul.list>li:nth-child(odd)').not('.arrow-up').css({ 'background': '#f6f6f6' });
+	$('#middleContent ul.list:last-child').css({ 'margin-bottom': '0' });
+    
+	$('#bottomContent ul.list>li').not('.arrow-up').css({ 'background': '#e6e6e6' });
 	
 	 Cufon.replace('h1');
 	 Cufon.replace('h2');

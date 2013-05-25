@@ -190,9 +190,16 @@
   <ItemGroup>
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="GlobalApplication.cs" />
+    <Compile Include="Helpers\MediaPropertyManager.cs" />
     <Compile Include="Mapping\AutoMapperConfiguration.cs" />
     <Compile Include="Mapping\Profiles\HomeMap.cs" />
     <Compile Include="Mapping\Profiles\MasterMap.cs" />
+    <Compile Include="Models\Home\ExperienceModel.cs" />
+    <Compile Include="Models\Home\WorkExperienceModel.cs" />
+    <Compile Include="Models\Home\SkillModel.cs" />
+    <Compile Include="Models\Home\SkillsModel.cs" />
+    <Compile Include="Models\Home\EducationModel.cs" />
+    <Compile Include="Models\Home\SchoolModel.cs" />
     <Compile Include="Models\Master\MenuItemModel.cs" />
     <Compile Include="Models\Master\PersonalInformationModel.cs" />
     <Compile Include="Models\Master\TopContentModel.cs" />
@@ -205,9 +212,7 @@
   <ItemGroup>
     <Compile Include="Helpers\StringModifier.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Home\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

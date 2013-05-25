@@ -13,7 +13,7 @@ body {
 h1, h2, h3, h4, h5, h6 { margin:0 10px 10px 0; color:#333; }
 h1 { font-size:52px; padding-top:5px;  }
 h2 { font-size:25px;color:#333;  }
-h3 { font-size:20px; font-style:italic;  margin-top:0; color:#173D5F; }
+h3 { font-size:20px; font-style:italic; color:#173D5F; }
 h4 { font-size:16px; font-weight:normal; }
 h5 { font-size:14px; display:inline; margin-left:5px; margin-right:5px; background:#2F597F; color:#fff;  width:150px; text-align:center; padding: 3px 10px 3px 10px; font-weight:normal; line-height:26px; clear:right;     }
 h5:hover{ background:#173D5E;  } 
@@ -32,7 +32,7 @@ a { color: #333; text-decoration:none; }
 
 #topContent .title-container { float: left; }
 
-#topContent .top-description { clear: both; font-family: Arial, Helvetica, sans-serif; font-size:19px; font-weight:normal; margin-top:10px; margin-bottom:15px; }
+#topContent .top-description { clear: both; font-family: Arial, Helvetica, sans-serif; font-size:19px; font-weight:normal; margin-top:0; margin-bottom:15px; }
 
 #topContent .address { background: url(../images/icons-sprite.png) 0 -473px no-repeat; display:block; overflow: hidden; padding:4px 0 0 35px; margin:0; }
 #topContent .phone { background: url(../images/icons-sprite.png) 0 -62px no-repeat; display:block; overflow: hidden; padding:4px 0 0 35px; margin:0; }
@@ -59,13 +59,15 @@ a { color: #333; text-decoration:none; }
 #bottomContent { padding-bottom: 25px; }
 
 #middleContent h3 { margin-top:0; float:left; margin-bottom:0; margin-right:15px; padding-bottom:0px; }
+#middleContent #educationContent h3 { margin-bottom:15px; }
 #middleContent h5.read-more { margin: 0; }
 
 #middleContent .project-description-container { padding: 15px 20px 0 10px;margin-bottom: -20px; }
-#middleContent .description{ clear:both; padding-top:10px; padding-bottom:5px; margin-bottom:0; } 
+#middleContent .description { clear:both; padding-top:10px; padding-bottom:5px; margin-bottom:0; } 
+#middleContent .description p { margin-bottom: 10px; } 
 
 ul.list { clear:both; margin:30px 0 45px 45px; list-style:none;  position:relative; border-bottom:1px dashed #afafaf;  }
-ul.list>li { padding:25px 25px 15px 25px; display:block; border:1px dashed #afafaf; border-bottom:0;   }
+ul.list>li { padding:25px 25px 0 25px; display:block; border:1px dashed #afafaf; border-bottom:0;   }
 ul.list li.arrow-up {top:-17px; background:transparent url(../images/arrow-up.png) 0 2px no-repeat; left:30px; width:100px; height:18px; padding:0; border:0; overflow:visible; position:absolute; }
 
 ul.list ul, ul.list  ol { margin-top:15px; }
@@ -75,7 +77,7 @@ ul.list ol li { margin-left:20px; }
 #social { margin:0; padding:0; list-style:none; display:inline-block; margin-bottom:-2px; }
 #social li { margin:0 0 0 20px; padding:0;  float:left; width:35px; height:35px; display:inline-block; }
 #bottomContent ul.list { margin-bottom: 10px;}
-ul.list ul#social li { margin-left:0; margin-right:15px;  }
+ul.list ul#social li { margin-left:0; margin-right:15px; padding-bottom: 15px;  }
 ul.list ul#social { margin-top:0px; margin-bottom:-3px; }
 #social a { display:block; padding:17px; margin:0; }
 /* IE 6 Fix */  * html #social li{ margin:0 0 0 4px; width:35px; }
@@ -88,3 +90,5 @@ ul.list ul#social { margin-top:0px; margin-bottom:-3px; }
 #social #flikr{ background: url("../images/social-icons.png") -358px 0 no-repeat; }
 #social #myspace{ background: url("../images/social-icons.png") -431px 0 no-repeat; }
 #social #RSS{ background: url("../images/social-icons.png") -494px 0 no-repeat;}
+
+.clear-all { clear: both; }

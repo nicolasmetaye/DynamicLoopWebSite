@@ -1,39 +1,22 @@
-@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Master.MetaTagsModel>
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Home.SkillsModel>
 @{
     Layout = null;
 }
 
-<h2>Skills</h2>
+<h2>@Model.Title</h2>
 <ul class="list">
     <li class="arrow-up">&nbsp;</li>
-    <li>
-        <h3>HTML &amp; CSS</h3> <h5> ADVANCED, 9 years </h5>
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut  laoreet dolore magna aliqua erat volutpat. 
-            Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla  mcorper suscipit lobortis nisl ut aliquip.
-        </p>
-        <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetuer adipiscing elit</li>
-            <li>Sed diam nonummy nibh euismod tincidunt</li>
-            <li>laoreet dolore magna aliquam erat volutpat</li>
-        </ul>
-    </li>
-    <li>
-        <h3>PHP5 &amp; MYSQL</h3>  <h5> ADVANCED, 8 years </h5>
-                          
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut  laoreet dolore magna aliqua erat volutpat. 
-            Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla  mcorper suscipit lobortis nisl ut aliquip.
-        </p>
-    </li>
-    <li>
-
-        <h3>JAVASCRIPT &amp; jQuery ( Javascript framework ) </h3>  <h5> BEGINER, 2 years </h5>
-                          
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut  laoreet dolore magna aliqua erat volutpat. 
-            Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla  mcorper suscipit lobortis nisl ut aliquip.
-        </p>
-    </li>
+    @foreach(var skill in Model.Skills)
+    {
+        <li>
+            <h3>@skill.Name</h3> 
+            @if  (!string.IsNullOrEmpty(skill.Experience))
+            {
+                <h5>@skill.Experience</h5>
+            }
+            <div class="description">
+                @Html.Raw(skill.Description)
+            </div>
+        </li>
+    }
 </ul>

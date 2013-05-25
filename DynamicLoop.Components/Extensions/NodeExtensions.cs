@@ -1,4 +1,7 @@
-﻿using Umbraco.Core.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Umbraco.Core.Models;
 using Umbraco.Web;
 
 namespace DynamicLoop.Components.Extensions
@@ -11,6 +14,16 @@ namespace DynamicLoop.Components.Extensions
             if (!string.IsNullOrEmpty(heading))
                 return heading;
             return content.Name;
+        }
+
+        public static IPublishedContent GetChildNode(this IPublishedContent content, string documentTypeAlias)
+        {
+            return content.Children.FirstOrDefault(node =>node.DocumentTypeAlias.Equals(documentTypeAlias, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public static IEnumerable<IPublishedContent> GetChildNodes(this IPublishedContent content, string documentTypeAlias)
+        {
+            return content.Children.Where(node => node.DocumentTypeAlias.Equals(documentTypeAlias, StringComparison.OrdinalIgnoreCase));
         }
     }
 }
