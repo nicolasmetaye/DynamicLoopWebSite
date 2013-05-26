@@ -1,0 +1,24 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Projects.ProjectsModel>
+@{
+    Layout = null;
+}
+
+<h2>@Model.Title</h2>
+<ul class="list">
+    <li class="arrow-up">&nbsp;</li>
+    @foreach(var project in Model.Projects)
+    {
+        <li>
+            <h3>@project.Name</h3> <h5><a href="@project.SourceUrl">SOURCE CODE</a></h5>
+            @if (!string.IsNullOrEmpty(project.ProjectUrl))
+            {
+                <h5><a href="@project.ProjectUrl">PREVIEW</a></h5>
+            }
+            <div class="description">
+                    @Html.Raw(project.Preview)
+            </div>
+            <h5 class="read-more"><a href="@project.PageUrl">READ MORE</a></h5>
+            <div class="read-more-after"></div>
+        </li>
+    }
+</ul>

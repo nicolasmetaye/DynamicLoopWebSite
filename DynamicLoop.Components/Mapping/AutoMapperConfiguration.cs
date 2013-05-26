@@ -11,6 +11,7 @@ namespace DynamicLoop.Components.Mapping
             {
                 configuration.AddProfile(new MasterMap());
                 configuration.AddProfile(new HomeMap());
+                configuration.AddProfile(new ProjectsMap());
             });
         }
     }

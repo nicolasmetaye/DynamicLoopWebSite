@@ -192,6 +192,7 @@
     <Compile Include="GlobalApplication.cs" />
     <Compile Include="Helpers\MediaPropertyManager.cs" />
     <Compile Include="Mapping\AutoMapperConfiguration.cs" />
+    <Compile Include="Mapping\Profiles\ProjectsMap.cs" />
     <Compile Include="Mapping\Profiles\HomeMap.cs" />
     <Compile Include="Mapping\Profiles\MasterMap.cs" />
     <Compile Include="Models\Home\ExperienceModel.cs" />
@@ -204,6 +205,8 @@
     <Compile Include="Models\Master\PersonalInformationModel.cs" />
     <Compile Include="Models\Master\TopContentModel.cs" />
     <Compile Include="Models\Master\MetaTagsModel.cs" />
+    <Compile Include="Models\Projects\ProjectModel.cs" />
+    <Compile Include="Models\Projects\ProjectsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
