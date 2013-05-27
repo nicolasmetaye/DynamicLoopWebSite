@@ -32,6 +32,7 @@ namespace DynamicLoop.Components.Mapping.Profiles
                 .ForMember(model => model.MenuItems, expression => expression.ResolveUsing(node =>
                     {
                         var rootNode = node.AncestorOrSelf(1);
+                        var menuNode = node.AncestorOrSelf(2);
                         var personalProjectsNode = rootNode.GetChildNode("PersonalProjects");
                         return new List<MenuItemModel>
                             {
@@ -43,7 +44,7 @@ namespace DynamicLoop.Components.Mapping.Profiles
                                     },
                                 new MenuItemModel
                                     {
-                                        IsSelected = node.Id == personalProjectsNode.Id,
+                                        IsSelected = menuNode != null && menuNode.Id == personalProjectsNode.Id,
                                         Title = personalProjectsNode.GetTitle(),
                                         Url = personalProjectsNode.Url
                                     }

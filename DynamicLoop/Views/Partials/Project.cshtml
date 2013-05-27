@@ -1,0 +1,15 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Projects.ProjectModel>
+@{
+    Layout = null;
+}
+
+<h3>@Model.Name</h3><h5><a href="@Model.SourceUrl">SOURCE CODE</a></h5>
+@if (!string.IsNullOrEmpty(Model.ProjectUrl))
+{
+    <h5><a href="@Model.ProjectUrl">PREVIEW</a></h5>
+}
+<div class="project-description-container">
+	<div class="description">
+		@Html.Raw(Model.Description)
+	</div>
+</div>

@@ -4,13 +4,13 @@
 }
 
 <h2>@Model.Title</h2>
-<ul class="list" id="educationContent">
+<ul class="list">
     <li class="arrow-up">&nbsp;</li>
     @foreach(var school in Model.Schools)
     {
         <li>
             <h3>@school.Name</h3>  <h5>@school.Period</h5>
-            <div class="clear-all"></div>
+            <div class="description"></div>
         </li>
     }
 </ul>    

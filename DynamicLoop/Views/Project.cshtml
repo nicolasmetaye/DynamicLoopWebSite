@@ -1,47 +1,9 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@using AutoMapper
+@using DynamicLoop.Components.Models.Projects
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "Master.cshtml";
+    var projectModel = Mapper.Map<IPublishedContent, ProjectModel>(Model.Content);
 }
 
-<h3>Google Maps</h3> <h5> SOURCE CODE </h5> <h5> PREVIEW </h5>
-<div class="project-description-container">
-	<div class="description">
-		<p>I decided to focus on modular design this time.
-			<br/>
-			In the last iteration using AutoMapper, we had a single project containing all the views, business logic and data layer.
-		</p>
-		<p>
-			We now have:
-			<ul>
-				<li>a <i>Common</i> project with the basic extensions and helpers</li>
-				<li>a <i>Domain</i> project with the entities objects and the repositories (including data layer base management)</li>
-				<li>a <i>Models</i> project with the models and the mappings definition that are used 
-				in the controllers</li>
-				<li>and finally the MVC project with only the controllers and the views</li>
-			</ul>
-		</p>
-		<p>
-			Refactoring was the first step of making this project more "modular".
-			<br />
-			The second step of my approach was to implement in my code DI (Dependency Injection) and IoC (Inversion of Control).
-			<div class="separator" style="clear: both; text-align: center;">
-				<a href="http://2.bp.blogspot.com/-TcING4VywVk/UEXGRgWAw2I/AAAAAAAACZo/yESFgya7h8A/s1600/traditional-vs-di.gif" imageanchor="1" style="clear:right; float:right; margin-left:1em; margin-bottom:1em"><img border="0" height="170" width="320" src="http://2.bp.blogspot.com/-TcING4VywVk/UEXGRgWAw2I/AAAAAAAACZo/yESFgya7h8A/s320/traditional-vs-di.gif" /></a>
-			</div>
-		</p>
-		<p>
-			To make it short, Dependency Injection and Inversion of Control are object-oriented practices that helps you to implement your objects more independently as you "inject" the dependencies to the objects you are going to use. 
-			<br />
-			It's called "inversion" as it doesn't follow the flow of the business logic usually determined by objects that are statically assigned to one another.
-			<br />
-			With DI and IoC, object interactions are defined through abstractions and the flow of business logic is instantiated by an assembler object at run-time.
-		</p>
-		<p>
-			It's a very powerful pattern that can allow to load dynamically the dependencies as "plugins". However in a more common way it also forces the developer to think his implementation as independent and simple units of code which obviously make everything more readable, maintainable, understandable and testable.
-		</p>
-		<p>
-			To achieve that in this project, I used <a href="http://docs.structuremap.net/">StructureMap</a>. The only subtle part is to set a controller factory in the global.asax to allow the controllers to be instantiated using StructureMap.
-			<br />
-			I defined only one IoC registry (in the <i>Domain</i> project) that defines the bindings between the interfaces and their implementations. It's basically using the defaut conventions.
-		</p>
-	</div>
-</div>
+@Html.Partial("Project", projectModel)
