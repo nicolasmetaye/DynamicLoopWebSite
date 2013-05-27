@@ -51,6 +51,14 @@ namespace DynamicLoop.Components.Mapping.Profiles
                             };
 
                     }));
+
+            Mapper.CreateMap<IPublishedContent, FooterModel>()
+                .ForMember(model => model.GitHubUrl, expression => expression.ResolveUsing(node => node.GetPropertyValue<string>("gitHubLink")))
+                .ForMember(model => model.Email, expression => expression.ResolveUsing(node => node.GetPropertyValue<string>("email")))
+                .ForMember(model => model.LinkedInUrl, expression => expression.ResolveUsing(node => node.GetPropertyValue<string>("linkedInLink")));
+
+            Mapper.CreateMap<IPublishedContent, BottomContentModel>()
+                .ForMember(model => model.Footer, expression => expression.ResolveUsing(node => node.AncestorOrSelf(1)));
         }
     }
 }

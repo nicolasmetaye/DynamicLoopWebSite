@@ -1,4 +1,4 @@
-@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Master.MetaTagsModel>
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DynamicLoop.Components.Models.Master.BottomContentModel>
 @{
     Layout = null;
 }
@@ -8,12 +8,9 @@
     <li class="arrow-up">&nbsp;</li>
     <li>
         <ul id="social">
-            <li id="RSS" title="RSS feed"><a href="#"></a></li>
-            <li id="facebook" title="Facebook"><a href="#"></a></li>
-            <li id="flikr" title="Flikr"><a href="#"></a></li>
-            <li id="twitter" title="Twitter"><a href="#"></a></li>
-            <li id="delicios" title="Delicios"><a href="#"></a></li>
-            <li id="digg" title="Digg"><a href="#"></a></li>
+            <li id="linkedIn" title="LinkedIn"><a href="@Model.Footer.LinkedInUrl"></a></li>
+            <li id="github" title="GitHub"><a href="@Model.Footer.GitHubUrl"></a></li>
+            <li id="email" title="Email"><a href="mailto:@Model.Footer.Email"></a></li>
         </ul>
 	   
     </li>

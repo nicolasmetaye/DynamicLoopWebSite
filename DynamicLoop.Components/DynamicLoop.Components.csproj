@@ -201,6 +201,8 @@
     <Compile Include="Models\Home\SkillsModel.cs" />
     <Compile Include="Models\Home\EducationModel.cs" />
     <Compile Include="Models\Home\SchoolModel.cs" />
+    <Compile Include="Models\Master\BottomContentModel.cs" />
+    <Compile Include="Models\Master\FooterModel.cs" />
     <Compile Include="Models\Master\MenuItemModel.cs" />
     <Compile Include="Models\Master\PersonalInformationModel.cs" />
     <Compile Include="Models\Master\TopContentModel.cs" />

@@ -5,6 +5,7 @@
     Layout = null;
     var metaTagsModel = Mapper.Map<IPublishedContent, MetaTagsModel>(Model.Content);
     var topContentModel = Mapper.Map<IPublishedContent, TopContentModel>(Model.Content);
+    var bottomContentModel = Mapper.Map<IPublishedContent, BottomContentModel>(Model.Content);
 }
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
@@ -28,7 +29,7 @@
             @RenderBody()
         </div>
         <div id="bottomContent">
-            @Html.Partial("Footer", metaTagsModel)
+            @Html.Partial("Footer", bottomContentModel)
         </div>
     </div>
 

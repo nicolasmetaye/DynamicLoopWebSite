@@ -75,20 +75,15 @@ ul.list li.arrow-up {top:-17px; background:transparent url(../images/arrow-up.pn
 .description ul { margin-top: -8px; margin-bottom: 5px; }
 
 #social { margin:0; padding:0; list-style:none; display:inline-block; margin-bottom:-2px; }
-#social li { margin:0 0 0 20px; padding:0;  float:left; width:35px; height:35px; display:inline-block; }
+#social li { margin:0 0 0 20px; padding:0;  float:left; width:32px; height:32px; display:inline-block; }
 #bottomContent ul.list { margin-bottom: 10px;}
 ul.list ul#social li { margin-left:0; margin-right:15px; padding-bottom: 15px;  }
 ul.list ul#social { margin-top:0px; margin-bottom:-3px; }
 #social a { display:block; padding:17px; margin:0; }
-/* IE 6 Fix */  * html #social li{ margin:0 0 0 4px; width:35px; }
-/* IE 7 Fix */  *:first-child+html #social li{ margin:0 0 0 1px; width:35px; }
-#social #twitter{ background: url("../images/social-icons.png") 0 0 no-repeat; }
-#social #blog{ background: url("../images/social-icons.png") -70px 0 no-repeat; }
-#social #delicios{ background: url("../images/social-icons.png") -142px 0 no-repeat; }
-#social #digg{ background: url("../images/social-icons.png") -215px 0 no-repeat;}
-#social #facebook{ background: url("../images/social-icons.png") -286px 0 no-repeat; }
-#social #flikr{ background: url("../images/social-icons.png") -358px 0 no-repeat; }
-#social #myspace{ background: url("../images/social-icons.png") -431px 0 no-repeat; }
-#social #RSS{ background: url("../images/social-icons.png") -494px 0 no-repeat;}
+/* IE 6 Fix */  * html #social li{ margin:0 0 0 4px; width:32px; }
+/* IE 7 Fix */  *:first-child+html #social li{ margin:0 0 0 1px; width:32px; }
+#social #github { background: url("../images/social-icons.png") 0 0 no-repeat; }
+#social #linkedIn{ background: url("../images/social-icons.png") -32px 0 no-repeat; }
+#social #email{ background: url("../images/social-icons.png") -64px 0 no-repeat; }
 
 .clear-all { clear: both; }
